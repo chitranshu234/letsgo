@@ -43,7 +43,7 @@ class Solution {
 
             if (root.val < prev.val) {
 
-                if (g1First == null) {
+                if (galat==0) {
 
                     g1First = prev;
                     g1Second = root;

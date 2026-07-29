@@ -7,12 +7,12 @@ class Solution {
 
     TreeNode g2First = null;
     TreeNode g2Second = null;
-
+    int galat =0;
     public void recoverTree(TreeNode root) {
 
         inorder(root);
 
-        if (g2First == null) {
+        if (galat==1) {
             // Only one violation (adjacent swap)
 
             int temp = g1First.val;
@@ -47,11 +47,13 @@ class Solution {
 
                     g1First = prev;
                     g1Second = root;
+                    galat++;
 
                 } else {
 
                     g2First = prev;
                     g2Second = root;
+                    galat++;
                 }
             }
 

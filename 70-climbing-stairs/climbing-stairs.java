@@ -4,7 +4,7 @@ class Solution {
 
     public int climbStairs(int n) {
 
-        dp = new int[n + 1];
+        dp = new int[n];
 
         return fun(0, n);
     }
